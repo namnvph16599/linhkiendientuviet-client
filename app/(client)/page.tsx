@@ -1,9 +1,12 @@
+'use client';
 import React from "react";
-
+import { useTranslation } from 'next-i18next';
 type Props = {};
 
 const Home = () => {
-  return <div>home</div>;
+  const { t } = useTranslation();
+  console.log(t);
+  return <div>home home {t('viet_nam')}</div>;
 };
 
 export default Home;
