@@ -1,9 +1,10 @@
+'use client';
 import React from "react";
 
 type Props = {};
 
 const page = (props: Props) => {
-  return <div>Product of my page</div>;
+  return <div>Contact to me</div>;
 };
 
 export default page;
