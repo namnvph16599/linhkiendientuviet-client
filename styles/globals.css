@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* @import "antd/dist/antd.css"; */
+
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -15,6 +15,14 @@
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
+}
+
+.product-image {
+  transition: opacity 0.5s ease-in;
+}
+
+.product-image.image-loaded {
+  opacity: 0;
 }
 
 /* body {

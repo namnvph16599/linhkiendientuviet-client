@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { Button } from 'antd';
 import '@/styles/globals.css';
+import 'antd/dist/reset.css';
 
 export const metadata = {
   title: 'linh kien dien tu viet',
@@ -14,29 +15,27 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  // const [mounted, setMounted] = useState(false);
-  // useEffect(() => setMounted(true), []);
 
   return (
     <html lang="en">
       <body className="flex gap-3 bg-red-500">
         {/* <div style={{ visibility: !mounted ? 'hidden' : 'visible' }}> */}
-        <Link href="/contact" >
+        <Link rel="preload" href="/contact" >
           <Button type="primary">
               contact
           </Button>
-          </Link>
-          <Link href="/product">
-            <Button type="primary" >
+        </Link>
+        <Link rel="preload" href="/product" >
+          <Button type="primary" >
             product
-            </Button>
-          </Link>
-          <Link href="/">
-            <Button type="primary" >
+          </Button>
+        </Link>
+        <Link href="/">
+          <Button type="primary" >
             Home
-            </Button>
-          </Link>
-          {children}
+          </Button>
+        </Link>
+        {children}
         {/* </div> */}
       </body>
     </html>
