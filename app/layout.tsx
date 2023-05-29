@@ -1,7 +1,7 @@
 'use client';
 // import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
-import { Button } from 'antd';
+import { Button } from '@/config/antd';
 import '@/styles/globals.css';
 import 'antd/dist/reset.css';
 
